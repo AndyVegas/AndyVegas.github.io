@@ -7,20 +7,30 @@
 </head>
 <body>
   <main>
-    <h1>Post Title</h1>
-    <h2>The subtitle, if you want it</h2>
-    <h4>Today's Date</h4>
+    <h1>Andrew Crowley's Coding Blog</h1>
+    <h2>Phase 0 - Week 1</h2>
+    <h4>January 23rd, 2016</h4>
   
     <section>
       <p>
-        Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+        What are the benefits of version control?
+
+        Version control is a very important aspect of web development, allowing multiple users to modify files and merge changes at the same time.  It also allows you to easily archive successive versions of version-controlled items, storing the data that distinguishes one version from another.  The easiest way to explain this to someone who knows nothing about git (for example) would be to imagine an essay on a single text document.  If a dozen people wanted to contribute to the essay without a version control system, it would be a slow process, with all individuals having to work separately.  Also, changes could be made to the master document without the knowledge or approval of the documents owner.  All of this is alleviated with VCS - Version control stores the date and time on which the item was created, when it was checked out or checked in, and the user who performed the action.  It also allows you to easily recover from accidental deletions, and save disk space.  
+
       </p>
       <p>
-          Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+        How does git help you keep track of changes?
+
+        Git is a version control system.  When you make changes, Git helps you save them.  Here are the steps:
+
+        Firstly, in the Max OS Terminal, check where you are by typing “git branch”.  This will let you know if you’re in the master.  Next, type “git status”.  This will let you know if anything is being tracked or modified, ready to commit.  Next “git pull” which fetches from and integrates with another repository or a local branch.  From here, we create a new branch using “git checkout -b <branch_name>”.  This allows us to work on a “branch” of the master in our working tree, without modifying the original code.  We then create a new directory by typing “mkdir <directory_name>”.  Inside the new directory we create a new file by typing “touch <filename>”.  From there, we navigate into the Sublime text editor by typing “sublime <filename>”.  WORK WORK WORK!  When finished, we save the Sublime file and go back to Terminal and type “git status”.  It should show that we have a modified <filename> which we then need to “git add <filename>” to be staged.  If we put in “git status” now, we’ll see that the file has been staged and is ready to commit.  The second to last step is typing “git commit -m” and adding a good commit message between quotation marks.  Finally we do “git push origin <branch_name> and then head into GitHub!
+
       </p>
       <p>
-          Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-      </p>
+        Why use GitHub to store your code?
+
+        GitHub, and VCSs in general are the mechanism you use to store code in a safe place.  One of the best features of GitHub is “forking” which allows you to copy someone else’s code to modify yourself.  If you make changes you’d like to share, you can send a notification called a “pull request” to the original owner. That user can then, with a click of a button, merge the changes found in your repository with the original repo.  These three features – fork, pull request and merge – along with the Facebook-like usability, are what make GitHub so powerful.  Since Git encourages granular recording of changes (commit early - commit often!), programmers, from absolute beginners (me) or experts, can trace the steps of some of the greatest developers in the world and find out how they solved tricky problems. This (and more) is why everyone should store their code on GitHub!
+     </p>
   
         <!-- copy and paste as many sections as you want to add paragraphs -->
       </section>
