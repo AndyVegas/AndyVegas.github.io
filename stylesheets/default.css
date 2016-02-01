@@ -10,5 +10,5 @@
 }
 
 .main-profile-pic:hover {
-	transform: scale(-5.2) rotate(360deg);
+	transform: scale(1.2) rotate(360deg);
 }
