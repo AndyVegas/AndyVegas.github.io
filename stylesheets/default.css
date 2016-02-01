@@ -1,0 +1,14 @@
+
+
+
+
+
+.main-profile-pic {
+	border: solid orange 5px;
+	border-radius: 50%;
+
+}
+
+.main-profile-pic:hover {
+	transform: scale(-5.2) rotate(360deg);
+}
