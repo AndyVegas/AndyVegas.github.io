@@ -1,0 +1,14 @@
+## What are the best practices associated with using classes vs. ids?
+
+The main thing to remember when using classes versus ids in HTML/CSS is **classes** can be used as many times as needed within a document.  **IDs** can only be applied once within a document.  Just like no two people should have the same passport number, NEVER use the same id on different elements.
+
+You can also combine classes within an element, such as:
+```
+<p class="highlight indent">
+
+.highlight { font-weight: bold; }
+.indent { padding-left: 2em; }
+```
+Lastly, ids have higher specificity than classes.  When declaration conflicts arise, these conflicts are resolved using the cascade rules - In simple terms, if a class selector and ID selector were to be in conflict, the ID selector wins.  
+
+Classes should be used mostly to group elements that have something in common together into a class, in order to be able to address them later. Classes are mostly used for styling. 
