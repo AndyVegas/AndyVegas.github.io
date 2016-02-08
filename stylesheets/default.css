@@ -1,14 +1,59 @@
 
 
+h1 {
+  font-size: 66px;
+  color: white;
+}
 
+body {
+	font-family: 'Varela Round', sans-serif;
+	color: black;
+	width: 85%;
+	margin: 0 auto;
+}
 
+header {
+  background-color: orange;
+}
 
-.main-profile-pic {
+header .main-profile-pic {
 	border: solid orange 5px;
 	border-radius: 50%;
+	position: absolute; top: 10px; right: 10px;
+	padding: .5em;
+	margin: 1.5em;
+}
+
+header .main-profile-pic:hover {
+	color: green;
+	transform: scale(1.2) rotate(360deg);
+}
+
+p {
+  font-size: 20px;
+}
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: orange;
+	margin-bottom: 30px;
+	float:left;
+	padding: 15px 0px;
+	width: 100%;
+}
+
+.main-nav li {
+	display: inline;
+	margin-right: 40px;
+	background-color: white;
 
 }
 
-.main-profile-pic:hover {
-	transform: scale(1.2) rotate(360deg);
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+	min-width: 100%;
+	margin-top: 10%;
 }
