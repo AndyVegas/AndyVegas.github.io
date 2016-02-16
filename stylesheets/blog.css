@@ -2,17 +2,37 @@
 #blog-list li {
     list-style-type: none;
     margin-bottom: 15px;
-    column-count: 2;
 }
 
 p {
 	margin-bottom: 40px;
 }
 
-/*.center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid black;
-    padding: 10px;
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+div.img:hover {
+    border: 1px solid #777;
 }
 
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+	min-width: 100%;
+	margin-top: 10%;
+}
