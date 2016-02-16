@@ -2,9 +2,14 @@
 #blog-list li {
     list-style-type: none;
     margin-bottom: 15px;
+    column-count: 2;
 }
 
-.center {
+p {
+	margin-bottom: 40px;
+}
+
+/*.center {
     margin: auto;
     width: 60%;
     border: 3px solid black;

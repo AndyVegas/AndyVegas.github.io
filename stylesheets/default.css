@@ -17,16 +17,16 @@ header {
 }
 
 header .main-profile-pic {
-	border: solid orange 5px;
+	border: solid orange 16px;
 	border-radius: 50%;
-	position: absolute; top: 10px; right: 10px;
-	padding: .5em;
-	margin: 1.5em;
+	position: fixed; top: 10px; right: 50px;
+	padding: .1em;
+	margin: .2em;
 }
 
 header .main-profile-pic:hover {
 	color: green;
-	transform: scale(1.2) rotate(360deg);
+	transform: scale(1.2) rotate(-15deg);
 }
 
 p {
@@ -46,7 +46,19 @@ p {
 .main-nav li {
 	display: inline;
 	margin-right: 40px;
-	background-color: white;
+	padding: 12px
+}
+
+.button {
+	display: inline-block;
+	height: 30px;
+	width: 100px;
+  background: darkorange;
+	border: 9px solid rgba(233, 105, 44, 19.4);
+	border-style: outset;
+	color: rgba(5, 5, 5, 5);
+	text-align: center;
+	font: bold 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 
 }
 
