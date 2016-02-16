@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="stylesheets/default.css">
+  <title>@ndrew ©rowley</title>
+</head>
+
+<body>
+<!--  
+  <header>
+    <nav>
+      <ul>
+        <li>Your menu</li>
+      </ul>
+    </nav>
+  </header>
+ --> 
+  <section>
+  
+    <article>
+      <header>
+        <h2>Arrays and Hashes - Technical Blog</h2>
+        <p>Posted on <time datetime="2016-02-15">February 15th 2016</time> by <a href="#">Andrew Crowley</a> </p>
+      </header>
+      <p>
+Ruby looks at collections of objects by putting them inside container objects.  In Ruby, there are two main built-in classes we will be dealing with: arrays and hashes.  
+</p>
+<p>
+Arrays are ordered, integer-indexed collections of any object.  Ruby array indexing starts at 0.  A negative index is assumed to be relative to the end of the array; that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.  Arrays can contain different types of object - integers, strings, floats, etc.  An array’s job is simply to store other objects.   </p>
+
+<p>
+Hashes are also ordered collections.  Hashes store objects in pairs, each pair consisting of a key and a value.  You retrieve a value by using the key.  They are similar to arrays, but where an array uses integers as its index, a Hash allows you to use any object type.  Keys are unique per hash: you can only have one key/value pair for any given key.  </p>
+
+<p>
+Arrays and hashes are closely connected.  An array is, in a sense, a has where the keys happen to be consecutive integers.  </p>
+
+<p>
+<u>Here are some examples of arrays:</u>
+<code>
+<p>array = [“platinum”, “gold”, “silver”]</p>
+<p>second_array = [1, "two", 3.0]</p>
+<p>i_wanna_visit = [“Maldives”, “Africa”, “New Zealand”, “Thailand”]</p>
+</code>
+<p>In the case of the bottom array, “puts i_wanna_visit[1]"" would print “Africa” to the screen.</p>
+<p>
+<u>And here are some examples of hashes:</u>
+</p>
+<code>
+<p>fave_cologne = Hash.new
+{"Paul" => "Acqua di Gio", "Johnny" => "Polo Sport", "Randy" => "Brut"}</p>
+<p>hash = {“best“ => “platinum”, “better” => “gold”, “good” => “silver”}</p>
+<p>grades = { "Johnny" => 90, "Billy" => 88, "Jenny" => 94 }</p>
+</code>
+<p>To output the entire last hash, you would type "puts grades" or you could output a key by calling its value. graders["Billy"] would output "88."</p>
+    </article>
+    
+  </section>
+
+  <aside>
+    <h2>About section</h2>
+    <p>Assignment 4.8 - Technical Blog</p>
+  </aside>
+
+  <footer>
+    <p>Copyright 2016 andrew crowley</p>
+  </footer>
+
+</body>
+
+</html>
