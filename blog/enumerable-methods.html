@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="stylesheets/default.css">
+  <title>@ndrew ©rowley</title>
+</head>
+
+<body>
+<!--  
+  <header>
+    <nav>
+      <ul>
+        <li>Your menu</li>
+      </ul>
+    </nav>
+  </header>
+ --> 
+  <section>
+  
+    <article>
+      <header>
+        <h2>Enumerable Methods - Technical Blog</h2>
+        <p>Posted on <time datetime="2016-02-21">February 21st 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
+      </header>
+      <p>
+In Ruby, common characteristics among many objects tend to reside in modules.  The Enumerable module provides a set of methods to traverse, search, sort and manipulate collections.  Enumerable's biggest advantage over the for loop is clarity - we can do more with prettier, fewer lines of code. Using Enumerable's looping power tools, like any?, all?, and friends makes your code read semantically, but the each method is Ruby's preferred way to iterate across a collection.  
+</p>
+<p>
+Here’s what we’re working with:
+<code>
+[:all?, :any?, :chunk, :collect, :collect_concat, :count, :cycle, :detect, :drop, :drop_while, :each_cons, :each_entry, :each_slice, :each_with_index, :each_with_object, :entries, :find, :find_all, :find_index, :first, :flat_map, :grep, :group_by, :include?, :inject, :lazy, :map, :max, :max_by, :member?, :min, :min_by, :minmax, :minmax_by, :none?, :one?, :partition, :reduce, :reject, :reverse_each, :select, :slice_after, :slice_before, :slice_when, :sort, :sort_by, :take, :take_while, :to_a, :to_h, :zip]
+</code>
+</p>
+
+<p>
+Focusing in on Enumerable#group_by, in In the simple terms, this method breaks a collection into groups based on some given criteria.  It expects a block containing the criteria by which the items in the collection will be grouped, and will return a hash where each key represents a group. Each key’s corresponding value is an array containing the members of that group.
+</p>
+<p>
+Example:
+<code>
+(0..15).group_by {|number| number % 3}
+=> {0=>[0, 3, 6, 9, 12, 15], 1=>[1, 4, 7, 10, 13], 2=>[2, 5, 8, 11, 14]}
+</code>
+</p>
+
+<p>
+In this code the numbers 0 through 15 are passed to the block, which receives each number as the parameter number. The group that each number is placed into is determined by the result value of the block, 0, 1 or 2 and so, the resulting hash will have three groups, represented by the keys 0, 1 and 2.
+</p>
+
+</article>
+    
+  </section>
+
+  <aside>
+    <h2>About section</h2>
+    <p>Assignment 5.9 - Technical Blog</p>
+  </aside>
+
+  <footer>
+    <p>copyright 2016 andrew crowley</p>
+  </footer>
+</body>
+</html>
