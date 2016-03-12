@@ -24,20 +24,20 @@
         <h2>Ruby - A Cheatsheet</h2>
         <p>Posted on <time datetime="2016-02-28">March 12th 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
       </header>
-      <p>
-How Ruby Works
+      
+<h3>How Ruby Works</h3>
 
-Ruby is a simple but powerful programming language that can be used to make all kinds of programs.</p>
+<p>Ruby is a simple but powerful programming language that can be used to make all kinds of programs.</p>
 
-<p>Ruby Loops 
-A loop is used to repeat statements until a condition is met. Ruby offers several different kinds of loops: the loop, while loop, and until loop.
+<h3>Ruby Loops</h3>
+<p>A loop is used to repeat statements until a condition is met. Ruby offers several different kinds of loops: the loop, while loop, and until loop.
 </p>
 
-<p>Loop Conditionals
-A loop conditional will exit a loop. A loop will run forever until the condition to exit the loop returns the value of true. If the condition returns the value of false, the loop will not exit. If the condition never returns true, we'll create an infinite loop.</p>
+<h3>Loop Conditionals</h3>
+<p>A loop conditional will exit a loop. A loop will run forever until the condition to exit the loop returns the value of true. If the condition returns the value of false, the loop will not exit. If the condition never returns true, we'll create an infinite loop.</p>
 
-<p>The While Loop
-The while loop is similar to the loop statement and it uses a conditional to perform the logic. However, the big difference is that the while loop continues to run as long as the conditional that is set up front continues to return true. The condition is also specified as part of the argument to the while loop.</p>
+<h3>The While Loop</h3>
+<p>The while loop is similar to the loop statement and it uses a conditional to perform the logic. However, the big difference is that the while loop continues to run as long as the conditional that is set up front continues to return true. The condition is also specified as part of the argument to the while loop.</p>
 
 <pre><code>
 def print_hello(number_of_times)
@@ -56,14 +56,14 @@ while answer < 5
 end
 </code></pre>
 
-<p>The Until Loop
-The until loop will continue to run until a certain condition is met. It's the opposite of the while loop in that while loops run as long as the condition is true, while the until loop will run as long as the condition is false and it exits when the condition becomes true.</p>
+<h3>The Until Loop</h3>
+<p>The until loop will continue to run until a certain condition is met. It's the opposite of the while loop in that while loops run as long as the condition is true, while the until loop will run as long as the condition is false and it exits when the condition becomes true.</p>
 
-<p>Ruby Iteration
-Iteration can be used to loop through values in Arrays, Hashes, and other Ruby types using the `for` and `times` constructs.</p>
+<h3>Ruby Iteration</h3>
+<p>Iteration can be used to loop through values in Arrays, Hashes, and other Ruby types using the `for` and `times` constructs.</p>
 
-<p>Iteration With Each
-The while loop will print out an array and use a variable to increment and keep track of what it is printing out. As we looping through each item in the array, we use a specific pattern - getting an item out of the array and working with it in a specific way. We are actually iterating over each item in the array. Ruby gives us ways to do this without writing a loop each time. The "each" method is commonly used to iterate over a collection of items, like an array.</p>
+<h3>Iteration With Each</h3>
+<p>The while loop will print out an array and use a variable to increment and keep track of what it is printing out. As we looping through each item in the array, we use a specific pattern - getting an item out of the array and working with it in a specific way. We are actually iterating over each item in the array. Ruby gives us ways to do this without writing a loop each time. The "each" method is commonly used to iterate over a collection of items, like an array.</p>
 
 <pre><code>
 array = [0, 1, 2, 3, 4, 5]
@@ -73,8 +73,8 @@ array.each do |item|
 end
 </code></pre>
 
-<p>Times Iteration
-The times iterator will take a number and execute the statements in the block that number of times. The times iterator optionally takes an argument and, just like array indices, starts at 0.  The times method also can take a single argument:</p>
+<h3>Times Iteration</h3>
+<p>The times iterator will take a number and execute the statements in the block that number of times. The times iterator optionally takes an argument and, just like array indices, starts at 0.  The times method also can take a single argument:</p>
 
 <pre><code>
 5.times do |item|
@@ -82,8 +82,8 @@ The times iterator will take a number and execute the statements in the block th
 end
 </code></pre>
 
-<p>For Loops
-There's another kind of loop in Ruby called the 'for' loop. The for loop is a common kind of loop in other programming languages but it functions a little bit differently in Ruby. A Ruby for loop is more of an iterator and functions internally like the each method.
+<h3>For Loops</h3>
+<p>There's another kind of loop in Ruby called the 'for' loop. The for loop is a common kind of loop in other programming languages but it functions a little bit differently in Ruby. A Ruby for loop is more of an iterator and functions internally like the each method.
 
 Most Ruby programmers don't use the for loop very often, instead preferring to use an "each" loop and do iteration. The reason for this is that the variables used to iterate in the for loop exist outside the for loop, while in other iterators, they exist only inside the block of code that’s running.  The following for loop creates a Range class with the numbers 1 to 3 and then passes it to the block:</p>
 
@@ -93,8 +93,8 @@ for item in 1..3 do
 end
 </code></pre>
 
-<p>Creating a Class
-Here we create a simple class. The class will be modeled after the concept of a name and return the different attributes a name might have.</p>
+<h3>Creating a Class</h3>
+<p>Here we create a simple class. The class will be modeled after the concept of a name and return the different attributes a name might have.</p>
 
 <pre><code>
 class Name
@@ -122,23 +122,23 @@ puts name.middle_name
 puts name.last_name
 </code></pre>
 
-<p>Variables
-Classes are composed of methods and variables. Variables can keep track of different states and values inside of a class.</p>
+<h3>Variables</h3>
+<p>Classes are composed of methods and variables. Variables can keep track of different states and values inside of a class.</p>
 
-<p>Ruby Objects
-When instantiating a new instance of a class, that new thing is called an object. In Ruby, everything is an object.</p>
+<h3>Ruby Objects</h3>
+<p>When instantiating a new instance of a class, that new thing is called an object. In Ruby, everything is an object.</p>
 
-<p>Attribute Readers
-An attribute reader allows us to access variables in a class from outside that class. This is normally code we would have to write ourselves but Ruby gives us a shortcut in the form of an attribute reader.</p>
+<h3>Attribute Readers</h3>
+<p>An attribute reader allows us to access variables in a class from outside that class. This is normally code we would have to write ourselves but Ruby gives us a shortcut in the form of an attribute reader.</p>
 
-<p>Attribute Writers and Accessors
-Ruby often gives us shortcuts to write common pieces of code. The process of accessing and writing attributes in a class can be done using `attr_writer` and `attr_accessor` to ease repeating code.</p>
+<h3>Attribute Writers and Accessors</h3>
+<p>Ruby often gives us shortcuts to write common pieces of code. The process of accessing and writing attributes in a class can be done using `attr_writer` and `attr_accessor` to ease repeating code.</p>
 
-<P>Methods
-Methods are extremely useful and powerful when writing classes. A method can manipulate the data inside of an instance of a class and return or format that data in new and interesting ways.</P>
+<h3>Methods</h3>
+<P>Methods are extremely useful and powerful when writing classes. A method can manipulate the data inside of an instance of a class and return or format that data in new and interesting ways.</P>
 
-<p>Instance Variables and Local Variables
-When using variables inside classes, only instance variables, which are prefixed with the `@` character, will be visible to all of the methods in the class. A variable that only exists inside of a code block or method is called a local variable. The whole concept is called scope.</p>
+<h3>Instance Variables and Local Variables</h3>
+<p>When using variables inside classes, only instance variables, which are prefixed with the `@` character, will be visible to all of the methods in the class. A variable that only exists inside of a code block or method is called a local variable. The whole concept is called scope.</p>
 
 <pre><code>
 class Name
