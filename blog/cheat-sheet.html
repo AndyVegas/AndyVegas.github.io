@@ -25,9 +25,9 @@
         <p>Posted on <time datetime="2016-02-28">March 12th 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
       </header>
       
-<h3>How Ruby Works</h3>
+<h3>Learning Ruby</h3>
 
-<p>Ruby is a simple but powerful programming language that can be used to make all kinds of programs.</p>
+<p>Ruby is a simple but powerful programming language that can be used to make all kinds of programs.  Conceived in 1993 by Yukihiro Matsumoto, Ruby is designed for programmer productivity and fun, following the principles of good user interface design.  At a Google Tech Talk in 2008 Matsumoto further stated, "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language."  He stresses that systems design needs to emphasize human, rather than computer, needs</p>
 
 <h3>Ruby Loops</h3>
 <p>A loop is used to repeat statements until a condition is met. Ruby offers several different kinds of loops: the loop, while loop, and until loop.
@@ -80,6 +80,11 @@ end
 5.times do |item|
   puts "Hello! #{item}"
 end
+_________________________________
+
+3.times do |i|
+   print i*i
+end
 </code></pre>
 
 <h3>For Loops</h3>
@@ -123,10 +128,16 @@ puts name.last_name
 </code></pre>
 
 <h3>Variables</h3>
-<p>Classes are composed of methods and variables. Variables can keep track of different states and values inside of a class.</p>
+<p>Classes are composed of methods and variables. Variables can keep track of different states and values inside of a class.
+
+x = 3 is a local variable for a method or block (gone when the method is done)
+@x = 3 is a instance variable owned by each object (it stays available)
+@@x = 3 is a class variable shared by all objects (it sticks around, too).
+:hello is a symbol, like a constant string. Useful for indexing hashes...
+dictionary = { :cat => "Goes meow", :dog => "Barks loud."} is a hash of key/value pairs. Access elements with dictionary[:cat].</p>
 
 <h3>Ruby Objects</h3>
-<p>When instantiating a new instance of a class, that new thing is called an object. In Ruby, everything is an object.</p>
+<p>When instantiating a new instance of a class, that new thing is called an object. In Ruby, everything is an object.  One object interacts with another by using what are called methods. More specifically, one object "calls or invokes the methods" of another object.</p>
 
 <h3>Attribute Readers</h3>
 <p>An attribute reader allows us to access variables in a class from outside that class. This is normally code we would have to write ourselves but Ruby gives us a shortcut in the form of an attribute reader.</p>
@@ -175,7 +186,7 @@ puts name.full_name_with_title
 
   <aside>
     <h2>About section</h2>
-    <p>Assignment 7.10 - Technical Blog </p>
+    <p>Assignment 8.7 - Cheat Sheet</p>
   </aside>
 
   <footer>
