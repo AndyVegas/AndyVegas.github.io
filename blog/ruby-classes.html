@@ -1,31 +1,33 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href=" ../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href=" ../stylesheets/blog.css">
-  <title>@ndrew ©rowley</title>
+  <title>@ndrew ©rowley blog</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../stylesheets/blog-post.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
-
 <body>
-<!--  
-  <header>
-    <nav>
-      <ul>
-        <li>Your menu</li>
+  <div class="wrap">
+    
+    <header class="main-header">
+    <div class="container clearfix">
+    <!-- <img class="main-profile-pic" src="imgs/profilepic.jpg" alt="A. Crowley Profile Pic" style="width:304px;height:228px;"> -->
+    <h1 class="name">@ndrew ©rowley</h1>
+      <ul class="main-nav">
+          <li><a href="http://andyvegas.github.io/index.html" class="button">home</a></li>
+          <li><a href="https://andyvegas.github.io/blog-index.html" class="button">blog</a></li>
+          <li><a href="#" class="button">portfolio</a></li>
       </ul>
-    </nav>
-  </header>
- --> 
-  <section>
-  
-    <article>
-      <header>
+    </div>
+    </header>
+    
+    <div class="container clearfix">  
+      
+      <div class="primary col">    
         <h2>Every class is an instance of a class called Class! -  A Classy Technical Blog</h2>
-        <p>Posted on <time datetime="2016-02-28">February 28th 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
-      </header>
-      <p>
-As I’ve been learning Ruby, I’ve been working with various types — numbers, strings, arrays, and hashes. Ruby calls these things classes. 
+        
+<p>As I’ve been learning Ruby, I’ve been working with various types — numbers, strings, arrays, and hashes. Ruby calls these things classes. 
 </p>
 
 <p>As we're going along creating a program, it can be cumbersome to remember each small nuanced part of what we're working with and remember those parts in terms that computers understand.  We start to abstract that away using representations of things we're used to in the real world.  These representations are called classes.</p>
@@ -62,6 +64,10 @@ end
 
 </code></pre>
 
+</div><!--/.primary-->
+
+<div class="secondary col">
+
 <p>
 By defining basic classes, we can use some of Ruby’s nice little features to make setting up the boilerplate code much easier.  A Class method is a piece of functionality that belongs to that class, but is not tied to any particular single instance.  Instance Methods on the other hand, can only be called on a particular instance of the class.</p>
 
@@ -80,17 +86,18 @@ end
 <p>In the example above, "products" is an Instance method.  You use Instance Methods when you need to act on a particular instance of the class.
 </p>
 
-    </article>
+</div><!--/.secondary-->
+            
+</div><!--/.container-->
     
-  </section>
-
+</div><!--/.wrap-->
   <aside>
     <h2>About section</h2>
     <p>Assignment 6.9 - Technical Blog </p>
   </aside>
 
-  <footer>
-    <p>copyright 2016 andrew crowley</p>
+   <footer class="main-footer">
+   <span>&copy;2016 andrew crowley</span>
   </footer>
 </body>
 </html>
