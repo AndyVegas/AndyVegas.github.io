@@ -1,30 +1,32 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href=" ../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href=" ../stylesheets/blog.css">
-  <title>@ndrew ©rowley</title>
+  <title>@ndrew ©rowley blog</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../stylesheets/blog.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
-
 <body>
-<!--  
-  <header>
-    <nav>
-      <ul>
-        <li>Your menu</li>
+  <div class="wrap">
+    
+    <header class="main-header">
+    <div class="container clearfix">
+    <!-- <img class="main-profile-pic" src="imgs/profilepic.jpg" alt="A. Crowley Profile Pic" style="width:304px;height:228px;"> -->
+    <h1 class="name">@ndrew ©rowley</h1>
+      <ul class="main-nav">
+          <li><a href="http://andyvegas.github.io/index.html" class="button">home</a></li>
+          <li><a href="https://andyvegas.github.io/blog-index.html" class="button">blog</a></li>
+          <li><a href="#" class="button">portfolio</a></li>
       </ul>
-    </nav>
-  </header>
- --> 
-  <section>
-  
-    <article>
-      <header>
+    </div>
+    </header>
+    
+    <div class="container clearfix">  
+      
+      <div class="primary col">      
         <h2>JavaScript vs. Ruby -  A Technical Blog</h2>
-        <p>Posted on <time datetime="2016-02-28">March 4th 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
-      </header>
-      <p>
+<p>
 Ruby and Javascript are fairly similar as they both use Object Oriented Programming, they are both dynamic, general purpose languages as well as scripting-languages.  JS is used to make interactive client-side webpages, whereas Ruby is used mainly on the backend.
 </p>
 
@@ -37,6 +39,9 @@ poppa = { name: "Andy", age: 35, height: 73 }
 var poppa = { name: "Andy", age: 35, height: 73 };
 </code></pre>
 
+</div><!--/.primary-->
+
+<div class="secondary col">
 
 <p>Accessing values is also similar in both languages:</p>
 
@@ -52,17 +57,21 @@ poppa.age;
 
 <p>Ruby hashes and JavaScript objects are both flexible ways of storing data. Ruby hashes have many built in methods to manipulate their data, whereas JavaScript allows you to write your own functions to manipulate your object. In this way, Ruby hashes are meant for storing and manipulating large sets of data in the back-end, while JavaScript is better for storing and accessing data in the front end.</p>
 
-    </article>
+</div><!--/.secondary-->
+            
+</div><!--/.container-->
     
-  </section>
+</div><!--/.wrap-->
+
 
   <aside>
     <h2>About section</h2>
     <p>Assignment 7.10 - Technical Blog </p>
   </aside>
 
-  <footer>
-    <p>copyright 2016 andrew crowley</p>
+  
+  <footer class="main-footer">
+   <span>&copy;2016 andrew crowley</span>
   </footer>
 </body>
 </html>
