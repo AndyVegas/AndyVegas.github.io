@@ -1,22 +1,89 @@
-Release 0: Research
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@ndrew ©rowley blog</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../stylesheets/blog-post.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+  <div class="wrap">
+    
+    <header class="main-header">
+    <div class="container clearfix">
+    <!-- <img class="main-profile-pic" src="imgs/profilepic.jpg" alt="A. Crowley Profile Pic" style="width:304px;height:228px;"> -->
+    <h1 class="name">@ndrew ©rowley</h1>
+      <ul class="main-nav">
+          <li><a href="http://andyvegas.github.io/index.html" class="button">home</a></li>
+          <li><a href="https://andyvegas.github.io/blog-index.html" class="button">blog</a></li>
+          <li><a href="#" class="button">portfolio</a></li>
+      </ul>
+    </div>
+    </header>
+    
+    <div class="container clearfix">  
+      
+      <div class="primary col">    
+        <h2>Ruby on Rails (RoR)</h2>
+        
+<p>Ruby is a programming language. It was created 20 years ago by Yukihiro “Matz” Matsumoto. By most measures of programming language popularity, Ruby ranks among the top ten in popularity, and largely due to the popularity of Rails. Like Java or the C language, Ruby is a general-purpose programming language, though it is best known for its use in web programming.  Ruby on Rails is the most powerful web framework available today and has been a crucial factor in the current tech startup boom.</p>
 
-There are a lot of interesting topics we haven't covered in Phase 0, but will be important for your success at DBC and beyond. Select a topic that interests you (or create one) and research it. We don't expect you to be experts in any of these, but try to get a high-level idea of what these things are and introduce them to your cohort. 
+<p>You’ve probably already used many of the applications that were built with Ruby on Rails: Basecamp, GitHub, Shopify, Airbnb, Twitch, SoundCloud, Hulu, Zendesk, Square, Highrise. Those are just some of the big names, but there are hundreds of thousands of applications built with the framework since its release in 2004.  Rails is a software library that extends the Ruby programming language. David Heinemeier Hansson (DHH - an interesting "hacker" and accomplished race-car driver) is its creator. It is often just called “Rails.”</p>
 
-Big O Complexity and Notation
-Computer Memory
-Dynamic vs. Static-typed Languages
-How computers work
-How the Internet Works
-Recursion
-Regular Expressions
-Sorting (merge sort, quick sort, bubble sort)
-Test-Driven Development
-What is Rails?
-Web Security
-SQL Injection (see Little Bobby Tables (Links to an external site.))
-NoSQL databases
-SQL query optimization
-Functional Programming
-Release 1: Write
+<p>Ruby on Rails is 100% open-source, available under the permissive MIT License, and as a result it also costs nothing to download or use.  It is software code that is added to the Ruby programming language. Technically, it is a package library (specifically, a RubyGem - which is a similar to a library or plug-in), that is installed using the OS command-line.</p>
 
-Write a blog post about what you learned. Teach your audience about it.
+<p>One of Ruby’s key advantages in the programming world is RubyGems, the package manager that makes it easy to create and share software libraries (gems) that extend Ruby.  For example, if you want to leverage the power of Google Maps in your web application, you can use **geocoder** gem; if you want to print the data in your application to PDF format, you can use the gem **pdfkit**. Programmers also have the option of creating their own gem.  There are currently over 60,000 libraries to choose from!</p>
+
+<p>Rails is a framework for building websites. As such, Rails establishes conventions for easier collaboration and maintenance.  Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application that runs on a web server. Because it runs on a web server, Rails is considered a server-side, or “back end,” web application development platform (the web browser is the “front end”).</p>
+
+<p>Rails is based on a popular Model View Controller or shortly known as MVC pattern, in which the application is divided into three basic components. Models deal with the data, and all the business logic needed to read and write that data. Views are used to build the presentation or User Interface of the application. Controllers work as a bridge that connects two components together. Models and Views can’t communicate directly with each other and, therefore, always need a Controller for communication. In controller, a programmer defines different methods – a chunk of code that one can use multiple times by calling that method – to perform tasks.
+
+Here’s how a typical model looks like in Ruby:</p>
+
+<pre><code>
+	class User < ActiveRecord::Base
+		validates :email, presence: true
+		after_save :send_welcome_email
+	end
+</code></pre>
+
+</div><!--/.primary-->
+
+<div class="secondary col">
+	<img class="feat-img" src="../imgs/RoR.png" alt="Ruby on Rails usefullness">
+
+<p>So... Why use Ruby on Rails? Rails is suitable for both state-of-the-art public websites that compete with Single Page JavaScript applications, and complex enterprise core system applications.  Its benefit is that it is versatile and able to compete with both the sleek and the powerful.  One of the reasons why Rails is so popular with tech startups is that it’s really great for rapid prototyping. It is possible to psuedocode a Rails app you want to build and have it up online and ready to go within a few hours. There are very few frameworks that could make that possible.  The more you allow Rails to do for you, the less you have to worry about re-writing or re-implementing your functionality.</p>
+
+<p>For most of common problems, Rails has a component at your disposal almost right out-of-the-box with documentation that is consistently above average (somehow, the Rails core team persuaded contributers that writing documentation is cool (even though we all know it’s not), leading to well written, concise and time-saving docs).</p>
+
+<p>RoR's pre-written frameworks can be used for your own projects. Why spend time reinventing the wheel when someone else has already done it for you?  With rapid development, easy maintenance and deployment and a massive community of gems and RoR programmers, it's no wonder this web framework is the choice of most startups.</p>
+
+<p>That said, Web Development is getting fragmented.  We have:
+<ul>
+<li>PHP - still on top, not the best technology out there, but much improved in recent years.</li>
+<li>Python - standard language for scientific work, making it the gold standard for web developers working in education, data science and research.</li>
+<li>Javascript is making it's way to the backend from the front-end with Node.js, Meteor and multiple pipelines. Not sure yet what place on backend landscape it gonna take, but the trend is clear: it is growing.</li>
+<li>Elixir and Phoenix- the new kid on the block - fast prototyping, yet high performance and scalability technology is getting a lot of traction and will surly take it chances in the race.</li>
+<li>The rise of mobile devices has actually pushed programmers back to compiled "system" programming languages like Java (on Android) and Objective C (on iOS).</li>
+<li>Probably 100 other technologies - some known of (e.g. Groovy, Play) and some unknown.  Today, Functional Programming languages like Haskell, Erlang, Scala and Clojure are all the rage.  That's also because the "web" is becoming more about juggling huge numbers of streams of notifications being pushed down to "fire-hoses" like Facebook and Twitter rather than serving up custom but static pages. </li>
+</ul>
+</p>
+
+
+</div><!--/.secondary-->
+            
+</div><!--/.container-->
+    
+</div><!--/.wrap-->
+
+  <aside>
+    <h2>About section</h2>
+    <p>Assignment 8.8 - Technical Blog</p>
+  </aside>
+
+   <footer class="main-footer">
+   <span>&copy;2016 andrew crowley</span>
+  </footer>
+</body>
+</html>
